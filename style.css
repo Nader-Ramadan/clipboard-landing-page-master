@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+/* Page and font reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+/* color variabels */
+:root {
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Dark-Strong-Cyan: hsl(171, 30%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Blue: hsl(233, 44%, 41%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+    --Off-White: hsl(220, 1%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+/* ######################## main & Body ######################## */
+body {
+    background: url(./design/mobile-design.jpg) no-repeat;
+    background: url(./images/bg-header-mobile.png) no-repeat;
+    background-position: top center;
+    background-size: contain;
+}
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 7.75rem 2rem 10.75rem;
+    text-align: center;
+    gap: 10rem;
+}
+/* ###################### section one ###################### */
+.history {
+    display: flex;
+    flex-flow: column;
+    gap: 1.125rem;
+}
+.history .logo {
+    align-self: center;
+    margin-bottom: calc(3.75rem - 1.125rem);
+}
+h1 {
+    font-weight: 600;
+    font-size: 1.875rem;
+    color: var(--Dark-Grayish-Blue);
+}
+p {
+    font-weight: 300;
+    word-spacing: -0.125rem;
+    line-height: 1.5625rem;
+    color: var(--Grayish-Blue);
+    align-self: center;
+}
+.btns {
+    display: flex;
+    flex-flow: column;
+    margin-top: 1.875rem;
+    gap: 1.625rem;
+}
+.btns button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-weight: 600;
+    padding: 1.125rem 0 0.875rem;
+    font-size: 1.125rem;
+    color: var(--white);
+    border-radius: 10rem;
+}
+.btns button:hover {
+    transition: 0.5s ease-out;
+    filter: brightness(140%);
+    scale: 1.1;
+}
+.btns button:first-child {
+    background: var(--Strong-Cyan);
+    box-shadow: 0 2px 0 var(--Dark-Strong-Cyan);
+}
+.btns button:last-child {
+    background: var(--Light-Blue);
+    box-shadow: 0 2px 0 var(--Dark-Blue);
+}
+/* ###################### section two ###################### */
+.track {
+    display: flex;
+    flex-flow: column;
+    gap: 4.25rem;
+}
+.upper {
+    display: flex;
+    flex-flow: column;
+    gap: 1.25rem;
+}
+h2 {
+    font-size: 1.625rem;
+    font-weight: 600;
+    color: var(--Dark-Grayish-Blue);
+}
+.banner {
+    display: flex;
+    flex-flow: column;
+    gap: calc(3.25rem + 1px);
+}
+.banner img {
+    width: 100%;
+}
+.banner-list ul {
+    display: flex;
+    flex-flow: column;
+    gap: calc(3.125rem + 1px);
+}
+.banner-list li {
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    gap: 0.625rem;
+}
+h3 {
+    font-size: calc(1.5rem - 1px);
+    color: var(--Dark-Grayish-Blue);
+}
+/* ###################### section three ###################### */
+.clipboard {
+    margin-top: 1.875rem;
+    display: flex;
+    flex-flow: column;
+    gap: 1.25rem;
+}
+.clip-img {
+    margin-top: calc(2.75rem - 1px);
+}
+.clip-img img {
+    width: 100%;
+}
+/* ###################### section four ###################### */
+.work-flow {
+    margin-top: -3.125rem;
+    display: flex;
+    flex-flow: column;
+    gap: 5.625rem;
+}
+.one {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 1rem;
+}
+.work-flow p {
+    width: 80%;
+}
+.two {
+    display: flex;
+    flex-flow: column;
+    gap: 1.875rem;
+}
+.two div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: calc(1.25rem + 1px);
+}
+.two div img {
+    margin-bottom: calc(2.625rem - (1.25rem + 1px));
+}
+.three {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 3.25rem;
+}
+.three img {
+    scale: 0.8;
+}
+.ios {
+    display: flex;
+    flex-flow: column;
+    gap: 1.25rem;
+}
+.second {
+    margin-top: 1.5625rem;
+}
+/* ###################### Footer ###################### */
+footer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 3.125rem;
+    /* background: var(--Off-White); */
+}
+.footer-logo img {
+    width: 3.75rem;
+}
+.list {
+    margin-top: 2.0625rem;
+    display: flex;
+    flex-flow: column;
+    gap: 1.6875rem;
+    font-size: 1.125rem;
+    color: var(--Dark-Grayish-Blue);
+}
+.list li {
+    list-style: none;
+    text-align: center;
+}
+.list li:hover {
+    color: var(--Strong-Cyan);
+    cursor: pointer;
+}
+.social-links {
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 3.25rem;
+}
+.social-links div {
+    cursor: pointer;
+}
+.attribution {
+    text-align: center;
+    display: none;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+/* ###################### For screens bigger than mobiles and tablets ###################### */
+@media screen and (min-width: 768px) {
+    body {
+        background: url(./images/bg-header-desktop.png) no-repeat;
+        background-size: contain;
+        background-position: top center;
+    }
+    main {
+        padding: 7.75rem 0 9.75rem;
+    }
+    h1 {
+        font-size: 2.6875rem;
+    }
+    p {
+        font-size: 120%;
+        max-width: 50%;
+    }
+    .btns {
+        flex-flow: row;
+        justify-content: center;
+        margin-top: 2.375rem;
+    }
+    .btns button {
+        padding: 1.125rem 2.125rem 0.875rem;
+    }
+    h2 {
+        font-size: 211%;
+    }
+    .banner {
+        flex-flow: row;
+        gap: 0;
+        margin-top: 1.125rem;
+    }
+    .banner-img img {
+        width: 45rem;
+    }
+    .banner-list{
+        display: flex;
+        align-items: center;
+        text-align: start;
+        justify-content: center;
+        padding-left: 6.625rem;
+    }
+    .banner-list ul {
+        gap: 2.875rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    .banner-list p {
+        align-self: flex-start;
+    }
+    .clipboard {
+        margin-top: 0.875rem;
+    }
+    .clip-img {
+        margin-top: 5.5rem;
+        align-self: center;
+    }
+    .work-flow {
+        margin-top: -5.75rem;
+        padding: 0 11%;
+    }
+    .two {
+        flex-flow: row;
+        justify-content: center;
+    }
+    .two p {
+        max-width: none;
+    }
+    .three {
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    .three img {
+        scale: 1;
+    }
+    footer {
+        flex-flow: row;
+        align-items: center;
+        padding: 3.125rem 10rem;
+        justify-content: space-between;
+    }
+    footer .list {
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        grid-template-rows: auto auto;
+        justify-items: start;
+        width: 57%;
+    }
+}
